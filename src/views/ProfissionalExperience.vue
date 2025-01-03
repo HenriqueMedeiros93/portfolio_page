@@ -1,15 +1,15 @@
 <template>
-  <div class="academy">
+  <div class="profissional">
     <p class="title">Experiência profissional</p>
     <div class="carousel-container">
-      <div class="academy-row">
-        <div class="academy-content">
+      <div class="profissional-row">
+        <div class="profissional-content">
           <div class="exp-title-image">
-            <img class="image-academy" :src="require(`@/assets/image/superopa.jpg`)" />
+            <img class="image-profissional" :src="require(`@/assets/image/superopa.jpg`)" />
             <div class="exp-container">
-              <span class="academy-title">SuperOpa</span>
+              <span class="profissional-title">SuperOpa</span>
               <span class="role">Desenvolvedor FullStack</span>
-              <div class="academy-time">
+              <div class="profissional-time">
                 <span>Duração: 1 ano e 11 meses</span>
               </div>
             </div>
@@ -42,14 +42,14 @@
           </p>
         </div>
       </div>
-      <div class="academy-row">
-        <div class="academy-content">
+      <div class="profissional-row">
+        <div class="profissional-content">
           <div class="exp-title-image">
-            <img class="image-academy" :src="require(`@/assets/image/foodpass.jpg`)" />
+            <img class="image-profissional" :src="require(`@/assets/image/foodpass.jpg`)" />
             <div class="exp-container">
-              <span class="academy-title">FoodPass</span>
+              <span class="profissional-title">FoodPass</span>
               <span class="role">Desenvolvedor FullStack</span>
-              <div class="academy-time">
+              <div class="profissional-time">
                 <span>Atualmente, no cargo há 6 meses</span>
               </div>
             </div>
@@ -85,12 +85,12 @@
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 
 </script>
 
 <style scoped>
-.academy {
+.education {
   display: flex;
   text-align: center;
   padding: 0px 48px;
@@ -112,7 +112,7 @@
   align-items: flex-start;
 }
 
-.academy-title {
+.profissional-title {
   font-size: 28px;
   font-weight: 700;
 }
@@ -134,7 +134,7 @@
   padding-right: 96px;
 }
 
-.academy-time {
+.profissional-time {
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -142,14 +142,14 @@
   font-weight: 600;
 }
 
-.academy-row {
+.profissional-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 12px;
 }
 
-.academy-content {
+.profissional-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -163,7 +163,7 @@
   color: #333;
 }
 
-.image-academy {
+.image-profissional {
   border-radius: 50%;
   width: 200px;
   height: 200px;
@@ -171,7 +171,7 @@
   transition: transform 0.3s ease;
 }
 
-.image-academy:hover {
+.image-profissional:hover {
   transform: scale(1.05);
 }
 
@@ -197,7 +197,7 @@
     flex-direction: column;
   }
 
-  .academy-row {
+  .profissional-row {
     flex-direction: column;
   }
 }
@@ -210,7 +210,7 @@
 </script>
 
 <style scoped>
-.academy {
+.profissional {
   display: flex;
   text-align: center;
   padding: 0px 48px;
@@ -232,7 +232,7 @@
   align-items: flex-start;
 }
 
-.academy-title {
+.profissional-title {
   font-size: 28px;
   font-weight: 700;
 }
@@ -254,7 +254,7 @@
   padding-right: 96px;
 }
 
-.academy-time {
+.profissional-time {
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -262,14 +262,14 @@
   font-weight: 600;
 }
 
-.academy-row {
+.profissional-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 12px;
 }
 
-.academy-content {
+.profissional-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -283,7 +283,7 @@
   color: #333;
 }
 
-.image-academy {
+.image-profissional {
   border-radius: 50%;
   width: 200px;
   height: 200px;
@@ -291,7 +291,7 @@
   transition: transform 0.3s ease;
 }
 
-.image-academy:hover {
+.image-profissional:hover {
   transform: scale(1.05);
 }
 
@@ -317,7 +317,7 @@
     flex-direction: column;
   }
 
-  .academy-row {
+  .profissional-row {
     flex-direction: column;
   }
 }

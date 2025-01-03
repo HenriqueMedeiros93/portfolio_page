@@ -77,7 +77,7 @@
   width: 100%;
 }
 
- /* buubles efect */
+ /* bubbles efect */
 .bubbles-container {
   position: relative;
   display: flex;

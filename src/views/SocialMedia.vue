@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { Github, Linkedin } from '@iconoir/vue';
 
 const redirectToLink = (url: string) => {
@@ -8,19 +7,19 @@ const redirectToLink = (url: string) => {
 </script>
 
 <template>
-  <div class="academy">
+  <div class="social-media">
     <p class="title">Vamos trabalhar juntos?</p>
     <div class="carousel-container">
-      <div class="academy-row" @click="redirectToLink('https://github.com/HenriqueMedeiros93')">
+      <div class="social-media-row" @click="redirectToLink('https://github.com/HenriqueMedeiros93')">
         <Github color="white" height="60" width="60" />
-        <div class="academy-content">    
-          <span class="academy-title">GitHub</span>
+        <div class="social-media-content">    
+          <span class="social-media-title">GitHub</span>
         </div>
       </div>
-      <div class="academy-row" @click="redirectToLink('https://www.linkedin.com/in/henrique-medeiros-204753219/')">
+      <div class="social-media-row" @click="redirectToLink('https://www.linkedin.com/in/henrique-medeiros-204753219/')">
         <Linkedin color="white" height="60" width="60" />
-        <div class="academy-content">
-          <span class="academy-title">LinkedIn</span>       
+        <div class="social-media-content">
+          <span class="social-media-title">LinkedIn</span>       
         </div>
       </div>
     </div>
@@ -28,7 +27,7 @@ const redirectToLink = (url: string) => {
 </template>
 
 <style scoped>
-.academy {
+.social-media {
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -37,7 +36,7 @@ const redirectToLink = (url: string) => {
   padding: 36px 0px;
 }
 
-.academy-title {
+.social-media-title {
   font-size: 28px;
   font-weight: 700;
   color: white;
@@ -52,7 +51,7 @@ const redirectToLink = (url: string) => {
   justify-content: space-evenly;
 }
 
-.academy-time {
+.social-media-time {
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -60,7 +59,7 @@ const redirectToLink = (url: string) => {
   font-weight: 600;
 }
 
-.academy-row {
+.social-media-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,7 +67,7 @@ const redirectToLink = (url: string) => {
   cursor: pointer;
 }
 
-.academy-content {
+.social-media-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,7 +81,7 @@ const redirectToLink = (url: string) => {
   color: white;
 }
 
-.image-academy {
+.image-social-media {
   border-radius: 50%;
   width: 250px;
   height: 250px;
@@ -90,7 +89,7 @@ const redirectToLink = (url: string) => {
   transition: transform 0.3s ease;
 }
 
-.image-academy:hover {
+.image-social-media:hover {
   transform: scale(1.05);
 }
 </style>

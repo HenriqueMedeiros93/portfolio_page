@@ -1,25 +1,25 @@
 <template>
-  <div class="academy">
+  <div class="education">
     <p class="title">Formações</p>
-    <div class="carousel-container">
-      <div class="academy-row">
-        <img class="image-academy" :src="require(`@/assets/image/uenp.png`)" />
-        <div class="academy-content">    
-          <span class="academy-title">Ciência da Computação</span>
+    <div class="education-container">
+      <div class="education-row">
+        <img class="image-education" :src="require(`@/assets/image/uenp.png`)" />
+        <div class="education-content">    
+          <span class="education-title">Ciência da computação</span>
           <span>Universidade Estadual do Norte do Paraná - Bandeirantes, PR</span>
-          <div class="academy-time">
+          <div class="education-time">
             <span>Início: 2019</span>
             <span>Término: 2021</span>
           </div>
           <span>Status: Trancado</span>   
         </div>
       </div>
-      <div class="academy-row">
-        <img class="image-academy" :src="require(`@/assets/image/unicesumar.png`)" />
-        <div class="academy-content">
-          <span class="academy-title">Análise e Desenvolvimento de Sistemas</span>
+      <div class="education-row">
+        <img class="image-education" :src="require(`@/assets/image/unicesumar.png`)" />
+        <div class="education-content">
+          <span class="education-title">Análise e desenvolvimento de sistemas</span>
           <span>Unicesumar - Educação a Distância (EAD)</span>
-          <div class="academy-time">
+          <div class="education-time">
             <span>Início: 2024</span>
             <span>Término: 2026</span> 
           </div>      
@@ -30,7 +30,7 @@
 </template>
 
 <style scoped>
-.academy {
+.education {
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -38,12 +38,12 @@
   background: white;
 }
 
-.academy-title {
+.education-title {
   font-size: 28px;
   font-weight: 700;
 }
 
-.carousel-container {
+.education-container {
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -52,7 +52,7 @@
   justify-content: space-evenly;
 }
 
-.academy-time {
+.education-time {
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -60,14 +60,14 @@
   font-weight: 600;
 }
 
-.academy-row {
+.education-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 6px;
 }
 
-.academy-content {
+.education-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,7 +81,7 @@
   color: #333;
 }
 
-.image-academy {
+.image-education {
   border-radius: 50%;
   width: 250px;
   height: 250px;
@@ -89,7 +89,7 @@
   transition: transform 0.3s ease;
 }
 
-.image-academy:hover {
+.image-education:hover {
   transform: scale(1.05);
 }
 </style>

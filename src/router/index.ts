@@ -13,21 +13,6 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Welcome',
     component: WelcomeView
   },
-  // {
-  //   path: '/pessoal',
-  //   name: 'pessoal',
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/ProjectsView.vue')
-  // },
-  // {
-  //   path: '/profissional',
-  //   name: 'profissional',
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/ProfissionalExperience.vue')
-  // },
-  // {
-  //   path: '/estudo',
-  //   name: 'estudo',
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/AcademyView.vue')
-  // },
 ]
 
 const router = createRouter({

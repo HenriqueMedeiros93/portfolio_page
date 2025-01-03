@@ -1,22 +1,13 @@
 <script setup>
+import { Contansts } from '@/constants';
 
-const skills = [
-  { name: 'JavaScript', icon: 'js.png' },
-  { name: 'TypeScript', icon: 'ts.png' },
-  { name: 'Nest.js', icon: 'nest.png' },
-  { name: 'Vue.js', icon: 'vue.png' },
-  { name: 'Flutter', icon: 'flutter.png' },
-  { name: 'Node.js', icon: 'node.png' },
-  { name: 'HTML', icon: 'html.png' },
-  { name: 'CSS', icon: 'css.png' },
-];
 </script>
 
 <template>
-  <div class="carousel-container">
+  <div class="hability-container">
     <h1 class="page-title">Minhas habilidades</h1>
-    <div class="carousel">
-      <div v-for="(skill, index) in skills" :key="index" class="carousel-item">
+    <div class="hability">
+      <div v-for="(skill, index) in Contansts.skills" :key="index" class="hability-item">
         <img :src="require(`@/assets/image/${skill.icon}`)" :alt="skill.name" class="skill-icon" />
         <span>{{ skill.name }}</span>
       </div>
@@ -25,7 +16,7 @@ const skills = [
 </template>
 
 <style scoped>
-.carousel-container {
+.hability-container {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -42,13 +33,13 @@ const skills = [
   margin-bottom: 48px; 
 }
 
-.carousel {
+.hability {
   display: flex;
   gap: 40px; 
-  animation: scrollCarousel 10s linear infinite;
+  animation: scrollhability 10s linear infinite;
 }
 
-.carousel-item {
+.hability-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,7 +58,7 @@ const skills = [
   color: #fff; 
 }
 
-@keyframes scrollCarousel {
+@keyframes scrollhability {
   0% {
     transform: translateX(100%);
   }

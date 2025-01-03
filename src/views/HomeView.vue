@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import AcademyView from './AcademyView.vue';
+import Education from './EducationView.vue';
 import WelcomeView from './WelcomeView.vue';
 import Hability from './HabilityView.vue';
 import ProfissionalExperience from './ProfissionalExperience.vue';
@@ -16,9 +16,8 @@ const toggleMenu = () => {
 };
 
 const scrollToSection = (sectionId: string) => {
-  // Usando o vue-scrollto para rolar suavemente
-  VueScrollTo.scrollTo(`#${sectionId}`, 500); // Aqui usamos o VueScrollTo.scrollTo
-  menuOpen.value = false; // Fechar o menu após clicar
+  VueScrollTo.scrollTo(`#${sectionId}`, 500); 
+  menuOpen.value = false; 
 };
 
 </script>
@@ -42,7 +41,7 @@ const scrollToSection = (sectionId: string) => {
       <img class="image-profile-down" src="@/assets/image/separator.svg" alt="Perfil de Henrique Medeiros" />  
     </section>
     <section id="academy">
-    <AcademyView></AcademyView>
+    <Education></Education>
    </section>
    <section id="hability" class="section-background">
     <img class="image-profile-up" src="@/assets/image/separator.svg" alt="Perfil de Henrique Medeiros" /> 
