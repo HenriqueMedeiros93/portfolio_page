@@ -92,4 +92,17 @@
 .image-education:hover {
   transform: scale(1.05);
 }
+
+@media screen and (max-width: 900px) {
+  .education-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .education-row {
+    flex-direction: column;
+  }
+}
 </style>
