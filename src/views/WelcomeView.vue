@@ -8,11 +8,11 @@
     </div>
     <div class="text-description">
       <div class="image-container">
-        <img class="image-profile" src="@/assets/image/profile.jpg" alt="Perfil de Henrique Medeiros" />  
+        <img class="image-profile" src="@/assets/image/profile.png" alt="Perfil de Henrique Medeiros" />  
       </div> 
       <div class="title">
         <span class="first-text">Olá, sou Henrique Medeiros!</span>
-        <span>Sou um <strong>Desenvolvedor FullStack</strong> apaixonado por criar soluções inovadoras e eficientes. Com experiência em <strong>Vue.js</strong>, <strong>Flutter</strong>, <strong>Node.js</strong> e outras tecnologias, me dedico a transformar ideias em produtos digitais funcionais e de alto desempenho. Vamos construir o futuro juntos?</span>
+        <span>&nbsp;&nbsp;&nbsp;Como desenvolvedor full-stack dedicado, com mais de dois anos de experiência prática, procurando sempre criar soluções dinâmicas e experiências de usuário imersivas. Proficiente em Dart/Flutter, Node.js, HTML, CSS, TypeScript, Vue.js e NestJS, trago um conjunto de habilidades versátil, garantindo um desenvolvimento robusto e inovador em todas as camadas.</span>
       </div>
     </div>
   </div>
@@ -21,14 +21,16 @@
 <style scoped>
 .image-profile {
   width: 100%;
-  box-shadow: #e4e8ef;
-  border-radius: 24px;
+  object-fit: cover;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
 }
 
 .image-container {
   z-index: 1000;
-  width: 15%;
+  width: 30%;
 }
+
 .home-container {
   display: flex;
   flex-direction: column;
@@ -77,7 +79,7 @@
   width: 100%;
 }
 
- /* bubbles efect */
+
 .bubbles-container {
   position: relative;
   display: flex;
@@ -107,6 +109,22 @@
   100% {
     transform: translateY(-100vh) scale(1);
     opacity: 0; 
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .text-description {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .carousel-container {
+    flex-direction: column;
+  }
+
+  .academy-row {
+    flex-direction: column;
   }
 }
 </style>

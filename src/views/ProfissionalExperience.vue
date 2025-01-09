@@ -1,15 +1,19 @@
+<script setup lang="ts">
+
+</script>
+
 <template>
-  <div class="profissional">
+  <div class="academy">
     <p class="title">Experiência profissional</p>
     <div class="carousel-container">
-      <div class="profissional-row">
-        <div class="profissional-content">
+      <div class="academy-row">
+        <div class="academy-content">
           <div class="exp-title-image">
-            <img class="image-profissional" :src="require(`@/assets/image/superopa.jpg`)" />
+            <img class="image-academy" :src="require(`@/assets/image/superopa.jpg`)" />
             <div class="exp-container">
-              <span class="profissional-title">SuperOpa</span>
+              <span class="academy-title">SuperOpa</span>
               <span class="role">Desenvolvedor FullStack</span>
-              <div class="profissional-time">
+              <div class="academy-time">
                 <span>Duração: 1 ano e 11 meses</span>
               </div>
             </div>
@@ -42,14 +46,14 @@
           </p>
         </div>
       </div>
-      <div class="profissional-row">
-        <div class="profissional-content">
+      <div class="academy-row">
+        <div class="academy-content">
           <div class="exp-title-image">
-            <img class="image-profissional" :src="require(`@/assets/image/foodpass.jpg`)" />
+            <img class="image-academy" :src="require(`@/assets/image/foodpass.jpg`)" />
             <div class="exp-container">
-              <span class="profissional-title">FoodPass</span>
+              <span class="academy-title">FoodPass</span>
               <span class="role">Desenvolvedor FullStack</span>
-              <div class="profissional-time">
+              <div class="academy-time">
                 <span>Atualmente, no cargo há 6 meses</span>
               </div>
             </div>
@@ -85,12 +89,8 @@
   </div>
 </template>
 
-<script setup lang="ts">
-
-</script>
-
 <style scoped>
-.education {
+.academy {
   display: flex;
   text-align: center;
   padding: 0px 48px;
@@ -112,7 +112,7 @@
   align-items: flex-start;
 }
 
-.profissional-title {
+.academy-title {
   font-size: 28px;
   font-weight: 700;
 }
@@ -134,7 +134,7 @@
   padding-right: 96px;
 }
 
-.profissional-time {
+.academy-time {
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -142,14 +142,14 @@
   font-weight: 600;
 }
 
-.profissional-row {
+.academy-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 12px;
 }
 
-.profissional-content {
+.academy-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -163,7 +163,7 @@
   color: #333;
 }
 
-.image-profissional {
+.image-academy {
   border-radius: 50%;
   width: 200px;
   height: 200px;
@@ -171,7 +171,7 @@
   transition: transform 0.3s ease;
 }
 
-.image-profissional:hover {
+.image-academy:hover {
   transform: scale(1.05);
 }
 
@@ -197,128 +197,9 @@
     flex-direction: column;
   }
 
-  .profissional-row {
+  .academy-row {
     flex-direction: column;
   }
 }
 </style>
 
-
-
-<script lang="ts">
-
-</script>
-
-<style scoped>
-.profissional {
-  display: flex;
-  text-align: center;
-  padding: 0px 48px;
-  flex-direction: column;
-  width: 100%;
-  background: white;
-}
-
-.exp-title-image {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
-}
-
-.exp-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.profissional-title {
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.role {
-  font-size: 18px;
-  font-weight: 600;
-  color: #666;
-}
-
-.carousel-container {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  margin-top: 20px;
-  align-items: center;
-  justify-content: space-evenly;
-  padding-left: 32px;
-  padding-right: 96px;
-}
-
-.profissional-time {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.profissional-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-}
-
-.profissional-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-}
-
-.title {
-  font-size: 40px;
-  font-weight: 900;
-  color: #333;
-}
-
-.image-profissional {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
-}
-
-.image-profissional:hover {
-  transform: scale(1.05);
-}
-
-.description {
-  font-size: 16px;
-  color: #444;
-  line-height: 1.6;
-  text-align: justify;
-  margin-top: 10px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  word-break: break-all;
-}
-
-@media screen and (max-width: 900px) {
-  .carousel-container {
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .carousel-container {
-    flex-direction: column;
-  }
-
-  .profissional-row {
-    flex-direction: column;
-  }
-}
-</style>
