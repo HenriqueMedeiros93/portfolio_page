@@ -11,7 +11,7 @@
         <img class="image-profile" src="@/assets/image/profile.png" alt="Perfil de Henrique Medeiros" />  
       </div> 
       <div class="title">
-        <span class="first-text">Olá, sou Henrique Medeiros!</span>
+        <span class="first-text">Olá, sou Henrique Medeiros!!!</span>
         <span>&nbsp;&nbsp;&nbsp;Como desenvolvedor full-stack dedicado, com mais de dois anos de experiência prática, procurando sempre criar soluções dinâmicas e experiências de usuário imersivas. Proficiente em Dart/Flutter, Node.js, HTML, CSS, TypeScript, Vue.js e NestJS, trago um conjunto de habilidades versátil, garantindo um desenvolvimento robusto e inovador em todas as camadas.</span>
       </div>
     </div>
